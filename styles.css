@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Barlow", sans-serif;
+    box-sizing: border-box;}
+html {
+    scroll-behavior: smooth;}
+:root{
+    --dark-green:#00712D;
+    --light-green:#D5ED9F;
+    --off-white:#FFFBE6;
+    --orange:#FF9100;
+    --s-fsize:1.2rem;
+    --m-fsize:1.5rem;
+    --l-fsize:1.7rem;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-weight: bold;
+    font-size: var(--l-fsize);
+    background-color: var(--off-white);
+    transition: background-color 0.5s;
+    color: var(--dark-green);
+    z-index: 1;}
+  header.sticky {
+    background-color: var(--light-green);
+  }
+.icon{
+    font-size: 2.7rem;
+}
+.icon a{
+    text-decoration: none;
+color: var(--dark-green);
+cursor: pointer;
+}
+header nav{
+    font-size: 2.7rem;
+}
+#cart{
+    font-weight: bolder;
+    cursor: pointer;
+    margin: 0 3rem 0 0;
+}
+header nav a{
+text-decoration: none;
+color: var(--dark-green);
+}
+#intro-section{
+    height: 100vh;
+    background-size: cover;
+    background-image: url('https://i.pinimg.com/736x/1b/9b/ca/1b9bcadf9c259ba33b564120f5be5b6f.jpg');
+}
+.description-container button{
+background-color: var(--dark-green);
+color: var(--off-white);
+border: none;
+font-size: var(--s-fsize);
+padding: 1rem;
+border-radius: 15px;
+cursor: pointer;
+}
+#products-section{
+    margin: 2rem 0;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+}
+#products-section h2{
+    font-size: 2.5rem;
+    margin-top: 8rem;
+}
+#products-section ul{
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+#products-section ul li{
+    margin: 1rem;
+}
+#products-section ul li img{
+width: 16rem;
+height: 20rem;
+border-radius: 15px;
+}
+button{
+    cursor: pointer;
+    background-color: var(--dark-green);
+    color: var(--off-white);
+    border: 1px solid var(--light-green);
+}
+.lower-product-part{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-height: 2.6rem;
+}
+ .lower-product-part h4{
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-right: 1rem;
+    padding: .5rem;
+    border-radius: 10px;
+}
+.lower-product-part button{
+    font-size: 1.3rem;
+    padding: .5rem;
+    border-radius: 10px;
+}
+#cart-section {
+    position: fixed;
+    padding: 1rem;
+    height: auto;
+    top: 12rem;
+    border-radius: 25px;
+    overflow: scroll;
+    right: -1000px;
+    background-color: var(--light-green);
+    width: 30%;
+    display: flex;
+    max-height: 50vh;
+    flex-direction: column;
+    box-shadow: 1px 1px 5px 5px var(--off-white);
+    transition: all 0.5s;
+    font-size: 1rem;
+}
+#cart-section #cart-title{
+    font-size: var(--l-fsize);
+}
+#cart-section .total-price{
+    font-size: var(--m-fsize);
+}
+#cart-section .cart-product{
+list-style-type: none;
+width: 100%;
+font-size: var(--s-fsize);
+}
+#cart-section .cart-product{
+    margin: 0;
+    padding: 0;
+}
+#cart-section .cart-product li {
+    border-bottom: 1px solid var(--off-white);
+    padding: .5rem;
+}
+.product-info{
+display: flex;
+justify-content: space-between;
+}
+.cart-btn-container{
+    display: flex;
+    margin-top: -1.5rem;
+    justify-content: flex-end;
+}
+#cart-section .cart-product li #price{
+    margin-top: 1.6rem;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--light-green);
+    font-size: var(--s-fsize);
+  }
+  footer a{
+    color: black;
+    text-decoration: none;
+  }
+    @media (max-width: 576px) {
+     header {
+         justify-content: space-between; 
+         font-size: 1.8rem; }
+      .icon{
+        font-size: 1.8rem;
+    }
+    .icon a{
+        text-decoration: none;
+    color: var(--dark-green);
+    }
+    header nav{
+        font-size: 1.8rem;
+    }
+     #cart-section {
+          top: 10.5rem; 
+        width: 80%; 
+   }
+}
+
+     
