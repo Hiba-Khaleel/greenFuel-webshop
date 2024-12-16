@@ -1,2 +1,2 @@
 # greenFuel-webshop
-Online smoothies web shop 
+Welcome to the GreenFuel Webshop, your go-to destination for delicious and healthy smoothies. This project was developed as part of the "NBI" course to gain hands-on experience with modern web technologies, including jQuery, JavaScript, HTML, and CSS.
