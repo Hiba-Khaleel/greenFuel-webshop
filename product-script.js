@@ -40,7 +40,7 @@ const btnContainer = `<div class='cart-btn-container'><button class="removeItem"
         <button class="addMore">+</button> <button class="removeOne">-</button></div>`
 
 
-////// -------ADD TO CART----- //////////
+///// -------ADD TO CART----- /////////
 
 function addToCart() {
     let priceText = $(this).closest('li').find('h4').text();
