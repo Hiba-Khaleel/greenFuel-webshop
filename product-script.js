@@ -32,9 +32,9 @@ for (let product of products) {
 
 
 $('body').on('click', '.lower-product-part button', addToCart);
-$("body").on("click", " .cart-product .removeItem", remove_from_cart)
-$("body").on("click", " .cart-product .addMore", add_more)
-$("body").on("click", " .cart-product .removeOne", removeOneItem)
+$("body").on("click", " .cart-product .removeItem", remove_from_cart);
+$("body").on("click", " .cart-product .addMore", add_more);
+$("body").on("click", " .cart-product .removeOne", removeOneItem);
 
 const btnContainer = `<div class='cart-btn-container'><button class="removeItem"><i class="fa fa-trash"></i></button>
         <button class="addMore">+</button> <button class="removeOne">-</button></div>`
