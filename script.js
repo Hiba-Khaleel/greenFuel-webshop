@@ -12,11 +12,11 @@ window.onscroll = function () {
   }
 };
 
-$("body").on("click", "#cart", toggleCart)
+$("body").on("click", "#cart", toggleCart);
 
 
 function toggleCart() {
-  let cart = $("#cart-section")
+  let cart = $("#cart-section");
   if (cart.css("right") === "20px") {
     cart.css("right", "-100%");
 
@@ -28,7 +28,7 @@ function toggleCart() {
 }
 function hideCart() {
   if (showCart) {
-    $("#cart-section").css("right", "-100%")
+    $("#cart-section").css("right", "-100%");
   }
 
 
